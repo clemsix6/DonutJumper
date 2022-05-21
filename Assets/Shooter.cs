@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -5,6 +6,13 @@ public class Shooter : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     private float nextShoot = 2;
+
+
+    private void Start()
+    {
+        nextShoot = Time.time + Random.Range(2, 4);
+    }
+
 
     private void Update()
     {
