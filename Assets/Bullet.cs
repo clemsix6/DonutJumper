@@ -10,13 +10,28 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         speed = Random.Range(3f, 10f);
-        player = GameObject.Find("Player");
+        GetPlayer();
         gameObject.transform.right = player.transform.position - transform.position;
         gameObject.GetComponent<SpriteRenderer>().color = new Color(
             Random.Range(0f, 1f),
             Random.Range(0f, 1f),
             Random.Range(0f, 1f),
             1);
+    }
+
+    private void GetPlayer()
+    {
+        var players = GameObject.FindGameObjectsWithTag("Player");
+        var distance = float.MaxValue;
+        
+        foreach (var p in players)
+        {
+            var currentDistance = Vector2.Distance(p.transform.position, transform.position);
+            if (!(currentDistance < distance))
+                continue;
+            this.player = p;
+            distance = currentDistance;
+        }
     }
 
     private void UpdateRotation()
@@ -43,8 +58,12 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
+        if (player == null)
+            return;
         UpdateRotation();
         CheckDistance();
+        if (Player.locked)
+            Destroy(gameObject);
     }
 
 

@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="bd723620-b336-46ee-89c9-99e4cd27229c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DonutJumper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DonutJumper/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shooter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker11.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker13.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker13.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Temp/FSTimeGet-1774b1788dbd81bdc9cb60d80d71f2b5" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/FSTimeGet-1774b1788dbd81bdc9cb60d80d71f2b5" afterDir="false" />
@@ -20,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CameraMoving.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653117734197</updated>
-      <workItem from="1653117743692" duration="4753000" />
+      <workItem from="1653117743692" duration="7071000" />
     </task>
     <servers />
   </component>
@@ -92,6 +98,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

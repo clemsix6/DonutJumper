@@ -16,7 +16,7 @@ public class Shooter : MonoBehaviour
 
     private void Update()
     {
-        if (Time.time < nextShoot)
+        if (Time.time < nextShoot || Player.locked)
             return;
         nextShoot += Random.Range(2, 4);
         Instantiate(bullet, transform.position, Quaternion.identity);
