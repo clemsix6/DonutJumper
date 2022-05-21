@@ -8,11 +8,14 @@ public class Option : MonoBehaviour
     public void LoadMenu()
     {
         SceneManager.LoadScene("Menu");
-        if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene("Menu");
     }
     public void LoadSceneQuitOption()
     {
         Application.Quit();
+    }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Menu");
     }
 }
