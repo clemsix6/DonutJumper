@@ -83,6 +83,8 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         UpdateText();
+        if (Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene("Menu");
     }
 
 
