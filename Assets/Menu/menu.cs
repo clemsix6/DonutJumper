@@ -17,4 +17,9 @@ public class menu : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+            SceneManager.LoadScene("SampleScene");
+    }
 }
