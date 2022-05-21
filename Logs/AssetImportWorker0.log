@@ -10,7 +10,7 @@ Available memory:        31807 MB
 Using pre-set license
 Pro License: NO
 
-(Unity:5265): Gdk-CRITICAL **: 09:21:17.268: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+(Unity:13879): Gdk-CRITICAL **: 09:56:38.389: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
 Desktop is 7680 x 2160 @ 60 Hz
 Initialize udev device monitor.
 
@@ -26,7 +26,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-44603
+41033
 Successfully changed project path to: /home/clement/DonutJumper
 /home/clement/DonutJumper
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,7 +58,7 @@ Successfully changed project path to: /home/clement/DonutJumper
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 68,53 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 72,45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2021.2.7f1 (6bd9e232123f)
 [Subsystems] Discovering subsystems at path /home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -79,42 +79,42 @@ blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffe
 der_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_shader_texture
 _footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap
  GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1678196840
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 857711400
 Initialize mono
 Mono path[0] = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/Managed'
 Mono path[1] = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56265
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56879
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,003857 seconds.
+Registered in 0,004594 seconds.
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 72,01 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 119,25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,487 seconds
+- Completed reload, in  0,577 seconds
 Domain Reload Profiling:
-	ReloadAssembly (488ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (577ms)
+		BeginReloadAssembly (37ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (389ms)
-			LoadAssemblies (37ms)
+		EndReloadAssembly (464ms)
+			LoadAssemblies (36ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (78ms)
+			SetupTypeCache (100ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (246ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (289ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (72ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (125ms)
+				RefreshPlugins (119ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (121ms)
 				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -122,11 +122,35 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,003015 seconds.
+Registered in 0,003373 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/clement/DonutJumper/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/clement/DonutJumper/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 73,33 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 76,68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Caught fatal signal - signo:11 code:1 errno:0 addr:0x58
+Obtained 23 stack frames.
+#0  0x0055f42fa6130c in burst_signal_handler(int, siginfo_t*, void*)
+#1  0x007f2a1017c420 in funlockfile
+#2  0x007f28f19dd12b in GC_is_marked
+#3  0x007f28f19aafdb in mono_unity_liveness_free_struct
+#4  0x007f28f19db542 in GC_mark_some
+#5  0x007f28f19dabc5 in GC_stopped_mark
+#6  0x007f28f19da67c in GC_maybe_gc
+#7  0x007f28f19db243 in GC_collect_a_little_inner
+#8  0x007f28f19dccb7 in GC_allocobj
+#9  0x007f28f19d70b1 in GC_generic_malloc_inner
+#10 0x007f28f19dd5e5 in GC_generic_malloc
+#11 0x007f28f19ab7b0 in mono_gc_register_root
+#12 0x007f28f194ee52 in mono_runtime_class_init
+#13 0x007f28f17dbac5 in mono_set_break_policy
+#14 0x007f28f17a9680 in _init
+#15 0x007f28f17ab8b6 in _init
+#16 0x007f28f17af548 in mono_jit_set_domain
+#17 0x007f28f182d343 in mono_install_ftnptr_eh_callback
+#18 0x007f28f182cdc0 in mono_install_ftnptr_eh_callback
+#19 0x00000040c4c396 in (Unknown)
+#20 0x000000418d6684 in Burst.Compiler.IL.DebugInfo.PortablePdbInstance:IsPdbValidAndMatching (System.Guid,System.Collections.Immutable.ImmutableArray`1<byte>)
+#21 0x000000418d311c in Burst.Compiler.IL.DebugInfo.PortablePdbCache:AddEntry (Mono.Cecil.AssemblyDefinition,System.Action`2<Burst.Compiler.IL.LogMessageType, string>)
+#22 0x000000418c5588 in zzzUnity.Burst.CodeGen.AssemblyLoader:RegisterAssembly (Mono.Cecil.AssemblyNameReference,Mono.Cecil.AssemblyDefinition)

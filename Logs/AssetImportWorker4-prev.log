@@ -10,7 +10,7 @@ Available memory:        31807 MB
 Using pre-set license
 Pro License: NO
 
-(Unity:15480): Gdk-CRITICAL **: 18:23:24.427: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+(Unity:6300): Gdk-CRITICAL **: 09:22:17.339: gdk_window_get_cursor: assertion 'GDK_IS_WINDOW (window)' failed
 Desktop is 7680 x 2160 @ 60 Hz
 Initialize udev device monitor.
 
@@ -26,7 +26,7 @@ AssetImportWorker4
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-42199
+44603
 Successfully changed project path to: /home/clement/DonutJumper
 /home/clement/DonutJumper
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -58,7 +58,7 @@ Successfully changed project path to: /home/clement/DonutJumper
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 63,57 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 91,28 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2021.2.7f1 (6bd9e232123f)
 [Subsystems] Discovering subsystems at path /home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/Resources/UnitySubsystems
@@ -79,121 +79,114 @@ blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffe
 der_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_shader_texture
 _footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap
  GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 537973032
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 187187800
 Initialize mono
 Mono path[0] = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/Managed'
 Mono path[1] = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56480
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/clement/Unity/Hub/Editor/2021.2.7f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,003218 seconds.
+Registered in 0,006621 seconds.
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 67,25 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 132,80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0,417 seconds
+- Completed reload, in  0,800 seconds
 Domain Reload Profiling:
-	ReloadAssembly (418ms)
-		BeginReloadAssembly (34ms)
+	ReloadAssembly (801ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (330ms)
-			LoadAssemblies (33ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (646ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (71ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (201ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (391ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (67ms)
+				RefreshPlugins (133ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (95ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0,002440 seconds.
+Registered in 0,004460 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /home/clement/DonutJumper/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image /home/clement/DonutJumper/Library/PackageCache/com.unity.visualscripting@1.7.6/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for LinuxStandalone target not found
-Refreshing native plugins compatible for Editor in 75,31 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 120,05 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Caught fatal signal - signo:11 code:1 errno:0 addr:0x58
-Obtained 66 stack frames.
-#0  0x0055a41c0b630c in burst_signal_handler(int, siginfo_t*, void*)
-#1  0x007f70f1c19420 in funlockfile
-#2  0x007f6fd329f12b in GC_is_marked
-#3  0x007f6fd326cfdb in mono_unity_liveness_free_struct
-#4  0x007f6fd329d542 in GC_mark_some
-#5  0x007f6fd329cbc5 in GC_stopped_mark
-#6  0x007f6fd329c67c in GC_maybe_gc
-#7  0x007f6fd329d243 in GC_collect_a_little_inner
-#8  0x007f6fd329ecb7 in GC_allocobj
-#9  0x007f6fd32990b1 in GC_generic_malloc_inner
-#10 0x007f6fd329f5e5 in GC_generic_malloc
-#11 0x007f6fd32a3585 in GC_malloc_kind_global
-#12 0x007f6fd326d880 in mono_gc_register_root
-#13 0x007f6fd3217dd6 in mono_object_new
-#14 0x007f6fd323daeb in mono_type_get_object
-#15 0x007f6fd323dcd4 in mono_type_get_object
-#16 0x007f6fd32111f5 in mono_runtime_class_init
-#17 0x007f6fd306dc04 in _init
-#18 0x007f6fd3071548 in mono_jit_set_domain
-#19 0x007f6fd30ef343 in mono_install_ftnptr_eh_callback
-#20 0x007f6fd30eedc0 in mono_install_ftnptr_eh_callback
-#21 0x00000040b1a396 in (Unknown)
-#22 0x00000040a62c7c in Mono.Cecil.PE.ImageReader:ReadMetadataStream (Mono.Cecil.PE.Section)
-#23 0x00000040a60d48 in Mono.Cecil.ModuleDefinition:ReadModule (Mono.Disposable`1<System.IO.Stream>,string,Mono.Cecil.ReaderParameters)
-#24 0x00000040a600a8 in Mono.Cecil.BaseAssemblyResolver:GetAssembly (string,Mono.Cecil.ReaderParameters)
-#25 0x00000040a5f3d0 in Mono.Cecil.BaseAssemblyResolver:Resolve (Mono.Cecil.AssemblyNameReference,Mono.Cecil.ReaderParameters)
-#26 0x00000040a5d0a1 in zzzUnity.Burst.CodeGen.AssemblyLoader:TryGetFullPath (Mono.Cecil.AssemblyNameReference,string&)
-#27 0x000000409d89cc in Burst.Compiler.IL.Jit.JitCacheManager:LoadLibraryCache (Burst.Compiler.IL.Jit.GetExternalFunctionPointerDelegate,string[],zzzUnity.Burst.CodeGen.AssemblyLoader,System.Action`1<string>)
-#28 0x000000409d6a64 in Burst.Compiler.IL.Jit.JitCompilerService:EnsureLibraryCacheLoaded (string)
-#29 0x000000409d6842 in (wrapper runtime-invoke) <Module>:runtime_invoke_void__this___object_object_intptr_int_intptr_intptr_object (object,intptr,intptr,intptr)
-#30 0x007f6fd30751e8 in mono_get_runtime_build_info
-#31 0x007f6fd3213d44 in mono_runtime_invoke
-#32 0x007f6fd3213c8e in mono_runtime_invoke
-#33 0x0055a41c4aebb3 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
-#34 0x0055a41c4aa6f7 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
-#35 0x0055a41bdbc3c1 in BurstCompilerService::CompileAsync(ScriptingMethodPtr, void*, int, void (*)(void*, int, void*), void (*)(void*, BurstLogType, char const*, char const*, int), char const*)
-#36 0x0055a41bdbf7c7 in BurstCompilerService::GetDisassembly(ScriptingObjectPtr, char const*)
-#37 0x0055a41b88afe5 in BurstCompilerService_CUSTOM_GetDisassembly(ScriptingBackendNativeObjectPtrOpaque*, ScriptingBackendNativeStringPtrOpaque*)
-#38 0x000000416e1116 in (Unknown)
-#39 0x007f6fd30751e8 in mono_get_runtime_build_info
-#40 0x007f6fd3213d44 in mono_runtime_invoke
-#41 0x007f6fd32103c5 in mono_runtime_class_init
-#42 0x007f6fd31d86bc in mono_lookup_icall_symbol
-#43 0x00000041658336 in (Unknown)
-#44 0x000000416782d6 in (Unknown)
-#45 0x007f6fd30751e8 in mono_get_runtime_build_info
-#46 0x007f6fd3213d44 in mono_runtime_invoke
-#47 0x007f6fd3213c8e in mono_runtime_invoke
-#48 0x0055a41c4aebb3 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
-#49 0x0055a41c4aa6f7 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
-#50 0x0055a41c5b7c24 in Scripting::UnityEditor::EditorAssembliesProxy::ProcessInitializeOnLoadAttributes(ScriptingArrayPtr, ScriptingExceptionPtr*)
-#51 0x0055a41c459453 in MonoManager::SetupLoadedEditorAssemblies(dynamic_array<int, 0ul> const&)
-#52 0x0055a41c45c0f2 in MonoManager::EndReloadAssembly(DomainReloadingData&, dynamic_bitset)
-#53 0x0055a41c459afb in MonoManager::ReloadAssembly()
-#54 0x0055a41d40e525 in LoadDomainAndUserAssemblies()
-#55 0x0055a41d410853 in LoadUserAssemblies()
-#56 0x0055a41d5bc0e8 in Application::InitializeProject()
-#57 0x0055a41d6636ad in InitializeUnity(void*)
-#58 0x007f70f2142be8 in g_source_get_time
-#59 0x007f70f214204e in g_main_context_dispatch
-#60 0x007f70f2142400 in g_main_context_dispatch
-#61 0x007f70f21426f3 in g_main_loop_run
-#62 0x007f70f27d712d in gtk_main
-#63 0x0055a41d662e3c in main
-#64 0x007f70f1a37083 in __libc_start_main
-#65 0x0055a41b886029 in _start
+Obtained 59 stack frames.
+#0  0x00557d0732730c in burst_signal_handler(int, siginfo_t*, void*)
+#1  0x007f67c0053420 in funlockfile
+#2  0x007f66a19dd12b in GC_is_marked
+#3  0x007f66a19aafdb in mono_unity_liveness_free_struct
+#4  0x007f66a19db542 in GC_mark_some
+#5  0x007f66a19dabc5 in GC_stopped_mark
+#6  0x007f66a19da67c in GC_maybe_gc
+#7  0x007f66a19db243 in GC_collect_a_little_inner
+#8  0x007f66a19dccb7 in GC_allocobj
+#9  0x007f66a19d70b1 in GC_generic_malloc_inner
+#10 0x007f66a19dd5e5 in GC_generic_malloc
+#11 0x007f66a19e1585 in GC_malloc_kind_global
+#12 0x007f66a19ab8dd in mono_gc_register_root
+#13 0x007f66a1956937 in mono_array_new
+#14 0x007f66a1956a3d in mono_array_new_specific
+#15 0x000000401ba29f in (Unknown)
+#16 0x00000040bbcd48 in Mono.Cecil.ModuleDefinition:ReadModule (Mono.Disposable`1<System.IO.Stream>,string,Mono.Cecil.ReaderParameters)
+#17 0x00000040bbc0a8 in Mono.Cecil.BaseAssemblyResolver:GetAssembly (string,Mono.Cecil.ReaderParameters)
+#18 0x00000040bbb3d0 in Mono.Cecil.BaseAssemblyResolver:Resolve (Mono.Cecil.AssemblyNameReference,Mono.Cecil.ReaderParameters)
+#19 0x00000040bb90a1 in zzzUnity.Burst.CodeGen.AssemblyLoader:TryGetFullPath (Mono.Cecil.AssemblyNameReference,string&)
+#20 0x00000040b332fc in Burst.Compiler.IL.Jit.JitCacheManager:LoadLibraryCache (Burst.Compiler.IL.Jit.GetExternalFunctionPointerDelegate,string[],zzzUnity.Burst.CodeGen.AssemblyLoader,System.Action`1<string>)
+#21 0x00000040b329c4 in Burst.Compiler.IL.Jit.JitCompilerService:EnsureLibraryCacheLoaded (string)
+#22 0x00000040b327a2 in (wrapper runtime-invoke) <Module>:runtime_invoke_void__this___object_object_intptr_int_intptr_intptr_object (object,intptr,intptr,intptr)
+#23 0x007f66a17b31e8 in mono_get_runtime_build_info
+#24 0x007f66a1951d44 in mono_runtime_invoke
+#25 0x007f66a1951c8e in mono_runtime_invoke
+#26 0x00557d0771fbb3 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
+#27 0x00557d0771b6f7 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
+#28 0x00557d0702d3c1 in BurstCompilerService::CompileAsync(ScriptingMethodPtr, void*, int, void (*)(void*, int, void*), void (*)(void*, BurstLogType, char const*, char const*, int), char const*)
+#29 0x00557d070307c7 in BurstCompilerService::GetDisassembly(ScriptingObjectPtr, char const*)
+#30 0x00557d06afbfe5 in BurstCompilerService_CUSTOM_GetDisassembly(ScriptingBackendNativeObjectPtrOpaque*, ScriptingBackendNativeStringPtrOpaque*)
+#31 0x000000402b1116 in (Unknown)
+#32 0x007f66a17b31e8 in mono_get_runtime_build_info
+#33 0x007f66a1951d44 in mono_runtime_invoke
+#34 0x007f66a194e3c5 in mono_runtime_class_init
+#35 0x007f66a19166bc in mono_lookup_icall_symbol
+#36 0x00000040228336 in (Unknown)
+#37 0x000000402482d6 in (Unknown)
+#38 0x007f66a17b31e8 in mono_get_runtime_build_info
+#39 0x007f66a1951d44 in mono_runtime_invoke
+#40 0x007f66a1951c8e in mono_runtime_invoke
+#41 0x00557d0771fbb3 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
+#42 0x00557d0771b6f7 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
+#43 0x00557d07828c24 in Scripting::UnityEditor::EditorAssembliesProxy::ProcessInitializeOnLoadAttributes(ScriptingArrayPtr, ScriptingExceptionPtr*)
+#44 0x00557d076ca453 in MonoManager::SetupLoadedEditorAssemblies(dynamic_array<int, 0ul> const&)
+#45 0x00557d076cd0f2 in MonoManager::EndReloadAssembly(DomainReloadingData&, dynamic_bitset)
+#46 0x00557d076caafb in MonoManager::ReloadAssembly()
+#47 0x00557d0867f525 in LoadDomainAndUserAssemblies()
+#48 0x00557d08681853 in LoadUserAssemblies()
+#49 0x00557d0882d0e8 in Application::InitializeProject()
+#50 0x00557d088d46ad in InitializeUnity(void*)
+#51 0x007f67c057cbe8 in g_source_get_time
+#52 0x007f67c057c04e in g_main_context_dispatch
+#53 0x007f67c057c400 in g_main_context_dispatch
+#54 0x007f67c057c6f3 in g_main_loop_run
+#55 0x007f67c0c1112d in gtk_main
+#56 0x00557d088d3e3c in main
+#57 0x007f67bfe71083 in __libc_start_main
+#58 0x00557d06af7029 in _start
