@@ -4,10 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public static bool locked = false;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
     [SerializeField] private TMP_Text text;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private KeyCode right;
+    [SerializeField] private KeyCode left;
+    [SerializeField] private KeyCode jump;
     private int donuts = 0;
     private bool grounded = false;
     private Rigidbody2D rigidBody;
@@ -20,13 +24,16 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
-        rigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        foreach (var player in GameObject.FindGameObjectsWithTag("Player"))
+            player.GetComponent<Player>().rigidBody.constraints = RigidbodyConstraints2D.FreezeAll;
         gameOverPanel.SetActive(true);
+        locked = true;
     }
 
 
     public void Restart()
     {
+        locked = false;
         SceneManager.LoadScene(0);
     }
 
@@ -35,9 +42,9 @@ public class Player : MonoBehaviour
     {
         var move = 0;
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(right))
             move += 1;
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(left))
             move -= 1;
         this.rigidBody.velocity = new Vector2(move * speed, this.rigidBody.velocity.y);
         if (this.transform.position.y < -10)
@@ -47,26 +54,12 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (!Input.GetKeyDown(KeyCode.Space) || !this.grounded)
+        if (!Input.GetKeyDown(jump) || !this.grounded)
             return;
         this.rigidBody.velocity = new Vector2(this.rigidBody.velocity.x, jumpForce);
         this.grounded = false;
     }
 
-
-    private void CameraMove()
-    {
-        if (Camera.main == null)
-            return;
-        var camera = Camera.main.transform.position;
-        var target = this.gameObject.transform.position;
-        var interpolation = 5f * Time.deltaTime;
-        if (interpolation > 1) interpolation = 1;
-        var result = Vector2.Lerp(camera, target, interpolation);
-
-        Camera.main.transform.position = new Vector3(result.x, result.y, camera.z);
-    }
-    
 
     private void UpdateText()
     {
@@ -76,13 +69,13 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Move();
-        Jump();
-        CameraMove();
-        UpdateText();
-        
         if (gameOverPanel.gameObject.active && Input.GetKeyDown(KeyCode.Return))
             Restart();
+        if (locked)
+            return;
+        Move();
+        Jump();
+        UpdateText();
     }
 
 
