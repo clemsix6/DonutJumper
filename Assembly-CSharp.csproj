@@ -43,13 +43,13 @@
   <ItemGroup>
      <Compile Include="Assets/Shooter.cs" />
      <Compile Include="Assets/Player.cs" />
+     <Compile Include="Assets/Menu/menu.cs" />
      <Compile Include="Assets/Member.cs" />
      <Compile Include="Assets/Generation.cs" />
      <Compile Include="Assets/Particule.cs" />
      <Compile Include="Assets/CameraMoving.cs" />
-     <Compile Include="Assets/Bullet.cs" />
-     <Compile Include="Assets/Menu/menu.cs" />
      <Compile Include="Assets/Menu/Option.cs" />
+     <Compile Include="Assets/Bullet.cs" />
      <None Include="Assets/Fonts/chunkfiveex/SIL Open Font License 1.1.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

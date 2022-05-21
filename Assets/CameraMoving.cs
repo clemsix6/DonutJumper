@@ -2,12 +2,15 @@ using UnityEngine;
 
 public class CameraMoving : MonoBehaviour
 {
+    [SerializeField] private GameObject secondPlayer;
     private GameObject[] players;
     public static bool multiplayer = false;
 
     private void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
+        if (multiplayer)
+            secondPlayer.SetActive(true);
     }
 
     private Vector2 GetMiddle()
