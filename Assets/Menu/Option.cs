@@ -14,4 +14,8 @@ public class Option : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+    public void LoadSceneQuitOption()
+    {
+        Application.Quit();
+    }
 }
