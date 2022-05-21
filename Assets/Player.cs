@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         this.rigidBody = this.gameObject.GetComponent<Rigidbody2D>();
+        locked = false;
     }
 
 
@@ -87,7 +88,7 @@ public class Player : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.CompareTag("Ground"))
+        if (coll.gameObject.CompareTag("Ground") || coll.gameObject.CompareTag("Player"))
             this.grounded = true;
         else if (coll.gameObject.CompareTag("Donut"))
             TakeDonut(coll.gameObject);
