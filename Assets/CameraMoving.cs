@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraMoving : MonoBehaviour
 {
     private GameObject[] players;
+    public static bool multiplayer = false;
 
     private void Start()
     {

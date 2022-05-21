@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
             _ => gameObject.transform.eulerAngles
         };
         this.rigidBody.velocity = new Vector2(move * speed, this.rigidBody.velocity.y);
-        if (this.transform.position.y < -10)
+        if (this.transform.position.y < -40)
             Die();
     }
 

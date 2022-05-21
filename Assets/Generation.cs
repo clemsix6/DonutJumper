@@ -8,10 +8,13 @@ public class Generation : MonoBehaviour
 
     private void Start()
     {
-        for (var i = 0; i < 500; i += 6)
+        for (int y = 0; y < 3; y++)
         {
-            var obj = Instantiate(prefabs[Random.Range(0, prefabs.Length)]);
-            obj.transform.position = new Vector3(i, -6);
+            for (var i = 0; i < 500; i += 6)
+            {
+                var obj = Instantiate(prefabs[Random.Range(0, prefabs.Length)]);
+                obj.transform.position = new Vector3(i, (-10 * (y + 1)));
+            }
         }
     }
 }

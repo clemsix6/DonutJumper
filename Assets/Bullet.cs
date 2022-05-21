@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour
     {
         var before = gameObject.transform.right;
         var target = player.transform.position - transform.position;
-        var interpolation = 0.1f * Time.deltaTime;
+        var interpolation = 0.3f * Time.deltaTime;
         if (interpolation > 1)
             interpolation = 1;
         var after = Vector3.Lerp(before, target, interpolation);
