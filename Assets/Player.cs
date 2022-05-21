@@ -47,6 +47,12 @@ public class Player : MonoBehaviour
             move += 1;
         if (Input.GetKey(left))
             move -= 1;
+        gameObject.transform.eulerAngles = move switch
+        {
+            > 0 => new Vector3(0, 0, 0),
+            < 0 => new Vector3(0, 180, 0),
+            _ => gameObject.transform.eulerAngles
+        };
         this.rigidBody.velocity = new Vector2(move * speed, this.rigidBody.velocity.y);
         if (this.transform.position.y < -10)
             Die();

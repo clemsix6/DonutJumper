@@ -27,7 +27,7 @@ public class Shooter : MonoBehaviour
     {
         if (!col.gameObject.CompareTag("Player"))
             return;
-        gameObject.GetComponent<Player>().donuts += 10;
+        col.gameObject.GetComponent<Player>().donuts += 10;
         Destroy(gameObject);
     }
 }
