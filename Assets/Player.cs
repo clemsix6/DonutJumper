@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] private KeyCode right;
     [SerializeField] private KeyCode left;
     [SerializeField] private KeyCode jump;
-    private int donuts = 0;
+    public int donuts = 0;
     private bool grounded = false;
     private Rigidbody2D rigidBody;
 
@@ -88,7 +88,9 @@ public class Player : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.CompareTag("Ground") || coll.gameObject.CompareTag("Player"))
+        if (coll.gameObject.CompareTag("Ground") ||
+            coll.gameObject.CompareTag("Player") ||
+            coll.gameObject.CompareTag("Bullet"))
             this.grounded = true;
         else if (coll.gameObject.CompareTag("Donut"))
             TakeDonut(coll.gameObject);

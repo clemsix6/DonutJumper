@@ -21,4 +21,13 @@ public class Shooter : MonoBehaviour
         nextShoot += Random.Range(2, 4);
         Instantiate(bullet, transform.position, Quaternion.identity);
     }
+
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (!col.gameObject.CompareTag("Player"))
+            return;
+        gameObject.GetComponent<Player>().donuts += 10;
+        Destroy(gameObject);
+    }
 }
