@@ -4,11 +4,12 @@ using Random = UnityEngine.Random;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    private float speed;
     private GameObject player;
     
     private void Start()
     {
+        speed = Random.Range(3f, 10f);
         player = GameObject.Find("Player");
         gameObject.transform.right = player.transform.position - transform.position;
         gameObject.GetComponent<SpriteRenderer>().color = new Color(
@@ -36,11 +37,12 @@ public class Bullet : MonoBehaviour
 
         if (distance > 50)
             Destroy(gameObject);
+        if (distance > 5)
+            GetComponent<Rigidbody2D>().velocity = transform.right * speed;
     }
 
     private void Update()
     {
-        transform.Translate(speed * Time.deltaTime, 0, 0);
         UpdateRotation();
         CheckDistance();
     }
@@ -48,7 +50,7 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.CompareTag("Ground"))
+        if (coll.gameObject.CompareTag("Ground") || coll.gameObject.CompareTag("Bullet"))
             Destroy(gameObject);
     }
 }
