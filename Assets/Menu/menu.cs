@@ -5,8 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
-    public void LoadScene()
+    public void LoadSceneGame()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+    public void LoadSceneSettings()
+    {
+        SceneManager.LoadScene("Option");
+    }
+    public void LoadSceneQuit()
+    {
+        Application.Quit();
     }
 }
