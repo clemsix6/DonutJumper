@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraMoving : MonoBehaviour
 {
@@ -8,9 +9,9 @@ public class CameraMoving : MonoBehaviour
 
     private void Start()
     {
-        players = GameObject.FindGameObjectsWithTag("Player");
         if (multiplayer)
             secondPlayer.SetActive(true);
+        players = GameObject.FindGameObjectsWithTag("Player");
     }
 
     private Vector2 GetMiddle()
@@ -42,5 +43,18 @@ public class CameraMoving : MonoBehaviour
     private void Update()
     {
         Move();
+    }
+    
+    
+    public void Restart()
+    {
+        Player.locked = false;
+        SceneManager.LoadScene("Scenes/SampleScene");
+    }
+
+
+    public void Quit()
+    {
+        SceneManager.LoadScene("Scenes/Menu");
     }
 }

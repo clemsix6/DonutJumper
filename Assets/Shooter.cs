@@ -10,7 +10,7 @@ public class Shooter : MonoBehaviour
 
     private void Start()
     {
-        nextShoot = Time.time + Random.Range(2, 4);
+        nextShoot = Time.time + Random.Range(0.5f, 2f);
     }
 
 

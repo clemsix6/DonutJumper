@@ -13,7 +13,7 @@ public class Generation : MonoBehaviour
             for (var i = 0; i < 500; i += 6)
             {
                 var obj = Instantiate(prefabs[Random.Range(0, prefabs.Length)]);
-                obj.transform.position = new Vector3(i, (-10 * (y + 1)));
+                obj.transform.position = new Vector3(i, (-8 * (y + 1)));
             }
         }
     }
